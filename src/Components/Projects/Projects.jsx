@@ -19,7 +19,9 @@ const Projects = () => {
     <section className="project__section pt-120 pb-120" id="projects">
       <div className="container">
         <Title
-          mainTitle={"Look at my portfolio and give me your feedback"}
+          mainTitle={
+            "Bringing ideas to life with innovative design and digital excellence."
+          }
           sortTitle={"Complete Project"}
         />
 
@@ -38,7 +40,8 @@ const Projects = () => {
         </div>
 
         <div className="custom__hover">
-          <Link to={"/protfolio"}
+          <Link
+            to={"/protfolio"}
             className="hover__circle mauto"
             data-aos="zoom-out-down"
             data-aos-duration="2000"

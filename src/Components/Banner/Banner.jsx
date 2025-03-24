@@ -60,18 +60,16 @@ const Banner = () => {
           <div className="col-lg-8">
             <div className="banner__content">
               <Link to={""} className="bn__currently">
-                <span className="d-block">
-                  Currently available for freelance
-                </span>
+                <span className="d-block">Available Worldwide</span>
                 <span className="d-flex gap-4 align-items-center">
-                  worldwide
+                  Creative Digital Experts
                   <i className="bi bi-arrow-up-right"></i>
                 </span>
               </Link>
               <h1>
-                <span className="hone"> Creative Visual</span>
-                <span className="d-block designers" data-text="Designer">
-                  Designer
+                <span className="hone"> Design. Market.</span>
+                <span className="d-block designers" data-text="Inspire.">
+                  Inspire.
                 </span>
               </h1>
               <div className="video__area">

@@ -35,10 +35,7 @@ const Footer = () => {
           <div className="row g-4">
             <div className="col-lg-6">
               <div className="get__content">
-                <p>
-                  Hello, I’m David Matias, Website & User Interface Designer
-                  based in London.
-                </p>
+                <p>Innovating Together, Growing Stronger.</p>
                 <a href="#0">davidmatias333@gmail.com</a>
               </div>
             </div>
@@ -65,9 +62,9 @@ const Footer = () => {
         <div className="container">
           <div className="copyright">
             <p className="white">
-              Copyright © 2023 {" "}
+              Copyright © 2023{" "}
               <Link to={"/"} className="base">
-                Matias.
+                &nbsp;CleverHat.
               </Link>{" "}
               All rights reserved.
             </p>

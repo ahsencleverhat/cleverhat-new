@@ -18,36 +18,42 @@ import { Pagination, Autoplay } from "swiper/modules";
 const reviewList = [
   {
     id: 1,
-    name: "Shawn Beltran",
-    position: "Business Owner",
-    review: `There are many variations of passages of Lorem Ipsum
-    available, by injected humour, or randomised words which
-    don't look even slightly believable. If you are going to
-    use a passage of Lorem Ipsum, you need to be hidden in
-    middle of text. All the Lorem Ipsum generators`,
-    stars: [<StarFill className="ratting fz-20" />],
+    name: "Priya R.",
+    position: "Brand Manager, EREENA",
+    review: `Working with CleverHat.xyz was a game-changer for our brand. Their creative design and marketing strategies helped us connect with our audience on a deeper level. The team’s dedication and understanding of our vision were truly impressive.`,
+    stars: [
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+    ],
   },
   {
     id: 2,
-    name: "John Methcel",
-    position: "Business Owner",
-    review: `There are many variations of passages of Lorem Ipsum
-    available, by injected humour, or randomised words which
-    don't look even slightly believable. If you are going to
-    use a passage of Lorem Ipsum, you need to be hidden in
-    middle of text. All the Lorem Ipsum generators`,
-    stars: [<StarFill className="ratting fz-20" />],
+    name: "Rahul M.",
+    position: "Marketing Head, GMR Manohar International Airport",
+    review: `CleverHat.xyz delivered exceptional branding solutions that perfectly aligned with our goals. Their professionalism and creative insights brought our vision to life, making a significant impact on our digital presence.`,
+    stars: [
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+    ],
   },
   {
     id: 3,
-    name: "Nethon Jr",
-    position: "Business Owner",
-    review: `There are many variations of passages of Lorem Ipsum
-    available, by injected humour, or randomised words which
-    don't look even slightly believable. If you are going to
-    use a passage of Lorem Ipsum, you need to be hidden in
-    middle of text. All the Lorem Ipsum generators`,
-    stars: [<StarFill className="ratting fz-20" />],
+    name: "Ananya S.",
+    position: "Operations Lead, BOND.AI",
+    review: `The team at CleverHat.xyz showcased remarkable creativity and technical expertise. From web design to content strategy, they provided end-to-end solutions that elevated our brand identity. Highly recommended!`,
+    stars: [
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+      <StarFill className="ratting fz-20" />,
+    ],
   },
 ];
 const Testimonial = () => {
@@ -55,7 +61,11 @@ const Testimonial = () => {
     <section className="testimonial__section pt-120 pb-120" id="testimonial">
       <div className="container">
         <div className="project__head text-center">
-          <span className="common__sub" data-aos="fade-up" data-aos-duration="1000">
+          <span
+            className="common__sub"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Testimonial
           </span>
           <h2 className="fw-500" data-aos="fade-down" data-aos-duration="1000">
@@ -89,7 +99,7 @@ const Testimonial = () => {
                   {reviewList.map(({ id, name, position, review, stars }) => {
                     return (
                       <SwiperSlide key={id}>
-                        <div  className="test__slide swiper-slide">
+                        <div className="test__slide swiper-slide">
                           <div className="d-flex mb-40 align-items-center gap-2">
                             {stars.map((star, index) => (
                               <i key={index}>{star}</i>

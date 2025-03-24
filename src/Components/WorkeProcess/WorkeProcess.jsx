@@ -5,33 +5,21 @@ import WorkProcessCard from "./WorkProcessCard";
 const processList = [
   {
     id: 1,
-    title: "Concept",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
-    list: [
-      "Reviewing any existing branding",
-      "Target audience and competitors research",
-      "Developing a strategy",
-    ],
+    title: "Creative",
+    info: "Innovative storytelling and dynamic visuals that captivate audiences, transforming ideas into powerful, memorable brand experiences.",
+    list: [],
   },
   {
     id: 2,
-    title: "Design",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
-    list: [
-      "Developing wireframes and mockup",
-      "Choosing typography, color palettes,",
-      "Refining the design",
-    ],
+    title: "Performance",
+    info: "High-impact strategies and optimized solutions that drive results, ensuring every project delivers measurable success and growth.",
+    list: [],
   },
   {
     id: 3,
-    title: "Webflow",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
-    list: [
-      "Testing the website thoroughly launch",
-      "Choosing typography, color palettes,",
-      "Refining the design",
-    ],
+    title: "Technology",
+    info: "Leveraging advanced tools and techniques to push creative boundaries, bringing immersive, tech-driven experiences to life.",
+    list: [],
   },
 ];
 const WorkeProcess = () => {
@@ -39,7 +27,7 @@ const WorkeProcess = () => {
     <section className="process__section pt-120 pb-120">
       <div className="container">
         <Title
-          mainTitle="Your Dream Website In Just Few Steps"
+          mainTitle="Our Process, Your Success."
           sortTitle="Working Process"
         />
         <div className="row g-4">

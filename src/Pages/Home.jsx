@@ -13,7 +13,6 @@ import MarqueeWapper from "../Components/Shared/Marquee/MarqueeWapper";
 import Awards from "../Components/About/Awards";
 import Preloader from "../Components/Shared/Preloader/Preloader";
 
-
 const Home = () => {
   const [isFetching, setIsFetching] = useState(true);
 
@@ -29,14 +28,14 @@ const Home = () => {
       <MarqueeWapper direction="left" images={images} />
       <About />
       <MarqueeWapper direction="right" images={images2} />
-      <Awards />
+      {/* <Awards /> */}
       <Projects />
       <Metting />
       <Services isHeading={true} />
       <WorkeProcess />
       <Testimonial />
       <Blogs />
-      <ScrollRestoration/>
+      <ScrollRestoration />
     </>
   );
 };

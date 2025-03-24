@@ -5,33 +5,33 @@ import Title from "../Shared/Title/Title";
 const serviceList = [
   {
     id: "01",
-    heading: "Illustration Design",
-    subHeading: "Designer",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "Creative Design",
+    subHeading: "Designs That Speak Your Brand’s Language.",
+    para: "From logos to complete brand identities, we create visually compelling designs that leave a lasting impression.",
   },
   {
     id: "02",
-    heading: "Business Branding",
-    subHeading: "Branding",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "Graphic Design",
+    subHeading: "Visual Storytelling at Its Best.",
+    para: "Enhance your brand presence with custom graphics, illustrations, and digital assets tailored for your audience.",
   },
   {
     id: "03",
-    heading: "Web UI/UX Design",
-    subHeading: "UI/UX Design",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "Content Creation",
+    subHeading: "Words That Resonate, Stories That Inspire.",
+    para: "Engage your audience with impactful content that conveys your brand’s message through blogs, copywriting, and visuals.",
   },
   {
     id: "04",
-    heading: "Application Design",
-    subHeading: " Web Design",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "Digital Marketing",
+    subHeading: "Strategic Campaigns for Maximum Impact.",
+    para: "Drive results with targeted digital marketing strategies, including SEO, social media management, and paid advertising.",
   },
   {
     id: "05",
-    heading: " Digital Marketing",
-    subHeading: "SEO Analytics",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "Web Design & Development",
+    subHeading: "Your Digital Presence, Perfected.",
+    para: "Build responsive, user-friendly websites designed to captivate and convert visitors into customers.",
   },
 ];
 const Services = ({ isHeading }) => {
@@ -43,8 +43,8 @@ const Services = ({ isHeading }) => {
       <div className="container">
         {isHeading && (
           <Title
-            mainTitle="My Special Service For Your Business Development"
-            sortTitle="Services That i Provide"
+            mainTitle="Creative solutions to elevate your brand."
+            sortTitle="Services We Offer"
           />
         )}
 

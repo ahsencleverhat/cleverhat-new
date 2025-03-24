@@ -56,11 +56,13 @@ const About = () => {
               data-aos-duration="1000"
             />
             <p className="descrp" data-aos="fade-up" data-aos-duration="1500">
-              We’re a digital marketing agency that exists to help business
-              owners achieve their dreams & we can’t wait to hear about yours.
+              CleverHat.xyz is a creative hub offering expert services in
+              design, content creation, digital marketing, and web development,
+              dedicated to transforming ideas into impactful digital experiences
+              that drive brand growth.
             </p>
           </div>
-          <div className="singletab">
+          {/* <div className="singletab">
             <ul className="tablinks">
               {tabList.map(({ id, name, value }) => (
                 <li
@@ -84,7 +86,7 @@ const About = () => {
               <Education isTabActive={isTabActive} />
               <Skills isTabActive={isTabActive} />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* <Awards /> */}
