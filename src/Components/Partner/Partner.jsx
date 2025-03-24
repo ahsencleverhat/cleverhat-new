@@ -1,8 +1,14 @@
 import React from "react";
-import partner1 from "../../assets/img/testimonial/partner1.png";
-import partner2 from "../../assets/img/testimonial/partner2.png";
-import partner3 from "../../assets/img/testimonial/partner3.png";
-import partner4 from "../../assets/img/testimonial/partner4.png";
+import partner1 from "../../assets/img/clients/1.png";
+import partner2 from "../../assets/img/clients/2.png";
+import partner3 from "../../assets/img/clients/3.png";
+import partner4 from "../../assets/img/clients/4.png";
+import partner5 from "../../assets/img/clients/5.png";
+import partner6 from "../../assets/img/clients/6.png";
+import partner7 from "../../assets/img/clients/7.png";
+import partner8 from "../../assets/img/clients/8.png";
+import partner9 from "../../assets/img/clients/9.png";
+import partner10 from "../../assets/img/clients/10.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -32,7 +38,27 @@ const partnerList = [
   },
   {
     id: 5,
-    image: partner1,
+    image: partner5,
+  },
+  {
+    id: 6,
+    image: partner6,
+  },
+  {
+    id: 7,
+    image: partner7,
+  },
+  {
+    id: 8,
+    image: partner8,
+  },
+  {
+    id: 9,
+    image: partner9,
+  },
+  {
+    id: 10,
+    image: partner10,
   },
 ];
 const Partner = () => {
@@ -58,7 +84,7 @@ const Partner = () => {
                 <SwiperSlide key={id}>
                   <div className="swiper-wrapper">
                     <div key={id} className="sponsor__slide swiper-slide">
-                      <img src={image} alt="img" />
+                      <img src={image} width={"100%"} alt="img" />
                     </div>
                   </div>
                 </SwiperSlide>

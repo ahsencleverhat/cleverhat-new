@@ -29,6 +29,9 @@
     }
     .image-container {
       margin: 20px 0;
+      img {
+        max-width: 320px;
+      }
     }
     .image_count {
       font-size: 14px;
