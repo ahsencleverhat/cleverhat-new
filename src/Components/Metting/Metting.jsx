@@ -1,6 +1,6 @@
 import React from "react";
-import {Envelope, GeoAlt} from "react-bootstrap-icons"
-import mettingImag from "../../assets/img/project/project-need.png"
+import { Envelope, GeoAlt } from "react-bootstrap-icons";
+import mettingImag from "../../assets/img/project/project-need.png";
 const Metting = () => {
   return (
     <section className="project__metting overhid pt-120 pb-120">
@@ -30,11 +30,11 @@ const Metting = () => {
                 data-aos-duration="1000"
               >
                 <span className="icon">
-                  <Envelope className="i"/>
+                  <Envelope className="i" />
                 </span>
                 <span className="box">
                   <span className="ptext fz-18 mb-1 d-block"> Email </span>
-                  <a href="#0"> davidmatias333@gmail.com </a>
+                  <a href="mailto:hello@cleverhat.xyz"> hello@cleverhat.xyz </a>
                 </span>
               </div>
               <div
@@ -43,7 +43,7 @@ const Metting = () => {
                 data-aos-duration="1500"
               >
                 <span className="icon">
-                  <GeoAlt className="i"/>
+                  <GeoAlt className="i" />
                 </span>
                 <span className="box">
                   <span className="ptext fz-18 mb-1 d-block"> Location </span>

@@ -10,17 +10,17 @@ const socalList = [
   },
   {
     id: 2,
-    platfrom: "Instagram",
+    platfrom: "Twitter",
     icon: <ArrowRight />,
   },
   {
     id: 3,
-    platfrom: "Dribble",
+    platfrom: "Youtube",
     icon: <ArrowRight />,
   },
   {
     id: 4,
-    platfrom: "Webflow",
+    platfrom: "Instagram",
     icon: <ArrowRight />,
   },
 ];
@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="col-lg-6">
               <div className="get__content">
                 <p>Innovating Together, Growing Stronger.</p>
-                <a href="#0">davidmatias333@gmail.com</a>
+                <a href="mailto:hello@cleverhat.xyz">hello@cleverhat.xyz</a>
               </div>
             </div>
             <div className="col-lg-6">

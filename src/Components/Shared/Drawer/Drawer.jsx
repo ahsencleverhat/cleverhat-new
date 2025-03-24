@@ -35,7 +35,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           <div className="sub__contac-item">
             <div className="content">
               <span className="address d-block"> email </span>
-              <Link className="textp"> matias999@.com </Link>
+              <Link className="textp"> hello@cleverhat.xyz </Link>
             </div>
           </div>
           <div className="sub__contac-item">
@@ -57,7 +57,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           </ul>
         </div>
         <Link
-          to={""}
+          to={"/contact"}
           className="d-flex justify-content-center fw-500 cmn--btn align-items-center gap-2"
         >
           <span>

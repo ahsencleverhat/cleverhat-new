@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { imagesList, projectList } from "../../Utlits/projectList";
 import PageHeader from "../../Components/Shared/PageHeader/PageHeader";
-import detailbg from "../../assets/img/protfolio/prot-detailsbig.png";
+import detailbg from "../../assets/img/works/1.webp";
 import detailbg1 from "../../assets/img/protfolio/prot-detials2.png";
 import detailbg2 from "../../assets/img/protfolio/prot-detials2.png";
 import ProjectCard from "../../Components/Shared/ProjectCard/ProjectCard";
@@ -24,11 +24,7 @@ const ProtfolioDetails = () => {
   };
   return (
     <>
-
-      <PageHeader
-        heading={"Brand Identity & Motion Design"}
-        page="Brand Identity & Motion Design"
-      />
+      <PageHeader heading={"EREENA"} page="EREENA" />
       <section className="protfolio__details pb-120">
         <div className="container">
           <div
@@ -79,79 +75,25 @@ const ProtfolioDetails = () => {
               data-aos-duration="1400"
             >
               <p className="fz-16 pra ttext__one">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over combined with a handful of model sentence
-                structures, to generate Lorem Ipsum which looks reasonable.
+                Solution: After conducting thorough research and extensive
+                documentation, we have produced several films that depict the
+                fascinating life cycle of Eri silk and its evolution into a
+                luxurious fabric. Our team traveled to remote regions in Assam
+                and other parts of India, immersing ourselves in the lives of
+                skilled weavers and gaining insight into their daily routines.
+                Through our lens, we captured the intricate techniques they use
+                and shed light on their way of life. By showcasing the premium
+                quality of their products through these films, we were able to
+                increase brand sales and bring attention to their lifestyle to a
+                wider audience.
               </p>
               <p className="fz-16 pra">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque quisquam est, qui dolorem ipsum
-                quia dolor sit amet, consectetur, adipisci velit, sed quia non
-                numquam eius modi tempora incidunt ut labore et dolore magnam
-                aliquam voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam,
-              </p>
-            </div>
-            <div
-              className="text__box mb__cus60"
-              data-aos="fade-up"
-              data-aos-duration="1600"
-            >
-              <h3 className="text__boxhead">Challenge</h3>
-              <p className="fz-16 pra ttext__one">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet.
-              </p>
-              <ul className="challenge__list">
-                <li>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
-                </li>
-                <li>
-                  Nor again is there anyone who loves or pursues or desires to
-                  obtain pain of itself, because it is pain, but because
-                  occasionally
-                </li>
-                <li>
-                  On the other hand, we denounce with righteous indignation and
-                  dislike
-                </li>
-              </ul>
-            </div>
-            <div
-              className="text__box mb__cus60"
-              data-aos="fade-up"
-              data-aos-duration="1800"
-            >
-              <h3 className="text__boxhead">Solution & Result</h3>
-              <p className="fz-16 pra">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over Latin words, combined with a handful of model
-                sentence structures, to generate Lorem Ipsum which looks
-                reasonable. The generated Lorem Ipsum is therefore always free
-                from repetition, injected humour, or non-characteristic words
-                etc.
+                Problem: Ereena is a luxury clothing brand for women. Their
+                exclusive line uses Eri Silk, a rare silk only found in the
+                Northeastern states of India. They are eager to promote Eri Silk
+                on the global stage through fashion shows, highlighting its
+                unique qualities and emphasizing the labor-intensive process
+                required to produce this luxurious fabric.
               </p>
             </div>
             <div
@@ -168,45 +110,6 @@ const ProtfolioDetails = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="protfolidetails__section cmn__bg pt-120 pb-120">
-        <div className="container">
-          <div className="project__head text-center">
-            <span
-              className="common__sub"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Protfolio
-            </span>
-            <h2 className="fw-500" data-aos="fade-up" data-aos-duration="1000">
-              Related Work
-            </h2>
-          </div>
-
-          <div className=" project__wrapone">
-            {projectList
-              .slice(0, 2)
-              .map(({ heading, id, image, subHeading }, index) => (
-                <ProjectCard
-                  key={id}
-                  image={image}
-                  heading={heading}
-                  subHeading={subHeading}
-                  openLightbox={openLightbox}
-                  index={index}
-                />
-              ))}
-          </div>
-        </div>
-        {lightboxOpen && (
-          <Lightbox
-            images={imagesList}
-            onClose={closeLightbox}
-            currentId={currentId}
-          />
-        )}
       </section>
     </>
   );
