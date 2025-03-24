@@ -34,7 +34,7 @@ const tabList = [
 
 const About = () => {
   const [isTabActive, setIsTabAative] = useState("about");
-  
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -56,9 +56,8 @@ const About = () => {
               data-aos-duration="1000"
             />
             <p className="descrp" data-aos="fade-up" data-aos-duration="1500">
-              I'm David Matias, I'm a Brand & Webflow Designer, Currently
-              residing in the lush Victoria Street London, Matias operates
-              globally and is ready to take on any design challenge.
+              We’re a digital marketing agency that exists to help business
+              owners achieve their dreams & we can’t wait to hear about yours.
             </p>
           </div>
           <div className="singletab">
@@ -66,9 +65,14 @@ const About = () => {
               {tabList.map(({ id, name, value }) => (
                 <li
                   key={id}
-                  className={`nav-links ${isTabActive === value ? "active" : ""} `}
+                  className={`nav-links ${
+                    isTabActive === value ? "active" : ""
+                  } `}
                 >
-                  <button onClick={() => handleTabClick(value)} className="tablink">
+                  <button
+                    onClick={() => handleTabClick(value)}
+                    className="tablink"
+                  >
                     {name}
                   </button>
                 </li>

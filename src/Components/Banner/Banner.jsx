@@ -15,6 +15,7 @@ import scrollDown from "../../assets/img/banner/scroll-down.png";
 import dial from "../../assets/img/banner/dial.png";
 import bnArrow from "../../assets/img/banner/bn-arrow.png";
 import VideoPlay from "../Shared/VideoPlay/VideoPlay";
+import Video from "../../assets/video/background.mp4";
 
 const socalIcon = [
   {
@@ -43,8 +44,8 @@ const Banner = () => {
   const [position, setPosition] = useState(false);
 
   useEffect(() => {
-    if(!position){
-      setPosition(true)
+    if (!position) {
+      setPosition(true);
     }
   }, []);
 
@@ -87,9 +88,8 @@ const Banner = () => {
           <div className="col-lg-4">
             <div
               className={`banner__thumb  ${
-                position  ? "right_up_animat" : "right_up"
+                position ? "right_up_animat" : "right_up"
               }`}
-             
             >
               <img src={bannerMan} alt="man-img" />
             </div>
@@ -104,9 +104,7 @@ const Banner = () => {
           <Link to={""}>(+02)-574-328-301</Link>
         </div>
         <div className="right__infoscroll">
-          <Link className="scroll">
-            scroll down
-          </Link>
+          <Link className="scroll">scroll down</Link>
           <Link className="scroll__bar">
             <img src={scrollDown} alt="img" />
           </Link>
@@ -126,7 +124,7 @@ const Banner = () => {
             {socalIcon.map(({ icon, id }) => {
               return (
                 <li key={id}>
-                  <Link to={""} >
+                  <Link to={""}>
                     <i>{icon}</i>
                   </Link>
                 </li>
@@ -136,10 +134,7 @@ const Banner = () => {
         </div>
       </div>
       {lightboxOpen && (
-        <VideoPlay
-          setLightboxOpen={setLightboxOpen}
-          url="https://www.youtube.com/embed/tgbNymZ7vqY"
-        />
+        <VideoPlay setLightboxOpen={setLightboxOpen} url={`${Video}`} />
       )}
     </section>
   );
