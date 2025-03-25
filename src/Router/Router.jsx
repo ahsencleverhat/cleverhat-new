@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         element: <AllServices />,
       },
       {
-        path: "/service-details",
+        path: "/service-details/:slug",
         element: <ServiceDetails />,
       },
       {
