@@ -26,17 +26,19 @@ const Projects = () => {
         />
 
         <div className={`project__wrapone`}>
-          {projectList.map(({ heading, id, image, subHeading }, index) => (
-            <ProjectCard
-              key={id}
-              image={image}
-              heading={heading}
-              subHeading={subHeading}
-              openLightbox={openLightbox}
-              index={index}
-              navigate="/protfolio-details"
-            />
-          ))}
+          {projectList.map(
+            ({ heading, id, image, subHeading, slug }, index) => (
+              <ProjectCard
+                key={id}
+                image={image}
+                heading={heading}
+                subHeading={subHeading}
+                openLightbox={openLightbox}
+                index={index}
+                navigate={`protfolio-details/${slug}`}
+              />
+            )
+          )}
         </div>
 
         <div className="custom__hover">

@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
         element: <Protfolio />,
       },
       {
-        path: "/protfolio-details",
+        path: "/protfolio-details/:slug",
         element: <ProtfolioDetails />,
       },
     ],

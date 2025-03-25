@@ -29,43 +29,19 @@ const menuList = [
     path: "/",
     section: "#services",
     name: "Services",
-    dropDown: [
-      {
-        id: 1,
-        path: "/all-services",
-        name: "Services",
-      },
-      {
-        id: 2,
-        path: "/service-details",
-        name: "Service Details",
-      },
-    ],
   },
-  {
-    id: 5,
-    path: "/",
-    section: "#testimonial",
-    name: "Testimonial",
-  },
-  {
-    id: 6,
-    path: "/",
-    section: "#blog",
-    name: "Blog",
-    dropDown: [
-      {
-        id: 1,
-        path: "/all-blog",
-        name: "Blog",
-      },
-      {
-        id: 2,
-        path: "/blog-details",
-        name: "Blog Details",
-      },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   path: "/",
+  //   section: "#testimonial",
+  //   name: "Testimonial",
+  // },
+  // {
+  //   id: 6,
+  //   path: "/",
+  //   section: "#blog",
+  //   name: "Blog",
+  // },
   {
     id: 7,
     path: "/contact",
@@ -119,7 +95,11 @@ const Header = () => {
                     {name}
                   </HashLink>
                   {dropDown?.length && (
-                    <ul className={`sub-menu ${dropDownId === id ? "sub-menu_active":""}`}>
+                    <ul
+                      className={`sub-menu ${
+                        dropDownId === id ? "sub-menu_active" : ""
+                      }`}
+                    >
                       {dropDown.map(({ id, name, path }) => {
                         return (
                           <li key={id}>

@@ -76,7 +76,10 @@ const Footer = () => {
                 <a href="#0"> Privacy Policy </a>
               </li>
             </ul>
-            <a href="#about" className="toparrow">
+            <a
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="toparrow"
+            >
               <i>
                 <ArrowUpShort />
               </i>

@@ -137,7 +137,7 @@
         text-transform: uppercase;
         padding: 40px 29px;
         &:hover {
-          color: var(--base);
+          color: var(--yellow);
         }
         i {
           margin-left: 2px;
@@ -172,7 +172,7 @@
                 }
                 &:hover {
                   a {
-                    color: var(--base);
+                    color: var(--yellow);
                     padding-left: 10px;
                   }
                 }
@@ -248,7 +248,7 @@
           }
           &:hover {
             a {
-              color: var(--base);
+              color: var(--yellow);
               padding-left: 20px;
             }
           }
