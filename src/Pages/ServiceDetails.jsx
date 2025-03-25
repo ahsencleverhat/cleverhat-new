@@ -50,14 +50,14 @@ const ServiceDetails = () => {
                   <h3>Service List</h3>
                   {serviceList.map((service, key) => {
                     return (
-                      <a
+                      <Link
                         key={key}
-                        href={`/service-details/${service.slug}`}
+                        to={`/service-details/${service.slug}`}
                         className="link__box mb-15"
                       >
                         {service.heading}
                         <i className="bi bi-chevron-right"></i>
-                      </a>
+                      </Link>
                     );
                   })}
                 </div>
