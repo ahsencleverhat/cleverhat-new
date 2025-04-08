@@ -3,7 +3,8 @@ import pro2 from "../assets/img/works/2.jpg";
 import pro3 from "../assets/img/works/3.jpg";
 import pro4 from "../assets/img/works/4.jpg";
 import pro5 from "../assets/img/works/5.png";
-import pro6 from "../assets/img/works/1.webp";
+import pro6 from "../assets/img/works/6.png";
+import pro7 from "../assets/img/works/7.jpg";
 
 export const projectList = [
   {
@@ -18,7 +19,7 @@ export const projectList = [
   },
   {
     id: 2,
-    image: pro3,
+    image: pro2,
     heading: "LAVIVER",
     subHeading: "Redefining Lifestyle with Sophisticated Simplicity.",
     description:
@@ -28,7 +29,7 @@ export const projectList = [
   },
   {
     id: 3,
-    image: pro5,
+    image: pro3,
     heading: "GMR MANOHAR INTERNATIONAL AIRPORT",
     subHeading: "Connecting the World, One Journey at a Time.",
     description:
@@ -38,7 +39,7 @@ export const projectList = [
   },
   {
     id: 4,
-    image: pro2,
+    image: pro4,
     heading: "VARNI",
     subHeading: "Tradition and Modernity, Seamlessly Woven.",
     description:
@@ -48,7 +49,7 @@ export const projectList = [
   },
   {
     id: 5,
-    image: pro4,
+    image: pro5,
     heading: "BOND.AI",
     subHeading: "Empowering Financial Growth with AI Intelligence.",
     description:
@@ -56,16 +57,26 @@ export const projectList = [
     category: ["branding_app", "website", "all"],
     slug: "bond-ai",
   },
-  // {
-  //   id: 6,
-  //   image: pro6,
-  //   heading: "Other",
-  //   subHeading: "Short description",
-  //   description:
-  //     "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus mattis nulla ultricies interdum. Sed ut bibendum massa. Vivamus sagittis ex non mauris sagittis, id lobortis neque feugiat. In enim nisi, fermentum quis turpis quis, bibendum venenatis odio. In rhoncus neque consequat nibh scelerisque finibus. Fusce lobortis nunc et tellus dapibus rutrum. Quisque scelerisque non risus pharetra facilisis. Vivamus vel urna facilisis, vestibulum sem sed, consectetur eros. Fusce quam nibh, vestibulum sed iaculis vel, tincidunt id neque. Aliquam pharetra vitae risus ut venenatis. Vivamus suscipit elit eu mauris gravida, pretium dapibus tortor cursus. Maecenas sed enim erat. Suspendisse vehicula risus interdum mauris luctus varius. Praesent nec volutpat elit, ut venenatis nunc. Nunc urna leo, aliquet sit amet viverra quis, consequat non leo.</p>",
-  //   category: ["landing_page", "website", "all"],
-  //   slug: "other",
-  // },
+  {
+    id: 6,
+    image: pro6,
+    heading: "AGS",
+    subHeading: "Education that speaks your language",
+    description:
+      "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus mattis nulla ultricies interdum. Sed ut bibendum massa. Vivamus sagittis ex non mauris sagittis, id lobortis neque feugiat. In enim nisi, fermentum quis turpis quis, bibendum venenatis odio. In rhoncus neque consequat nibh scelerisque finibus. Fusce lobortis nunc et tellus dapibus rutrum. Quisque scelerisque non risus pharetra facilisis. Vivamus vel urna facilisis, vestibulum sem sed, consectetur eros. Fusce quam nibh, vestibulum sed iaculis vel, tincidunt id neque. Aliquam pharetra vitae risus ut venenatis. Vivamus suscipit elit eu mauris gravida, pretium dapibus tortor cursus. Maecenas sed enim erat. Suspendisse vehicula risus interdum mauris luctus varius. Praesent nec volutpat elit, ut venenatis nunc. Nunc urna leo, aliquet sit amet viverra quis, consequat non leo.</p>",
+    category: ["landing_page", "website", "all"],
+    slug: "ags",
+  },
+  {
+    id: 7,
+    image: pro7,
+    heading: "Ankura Hospitals",
+    subHeading: "Contact your doctor",
+    description:
+      "<p>In a competitive market, how does an emerging brand like Ankura Hospitals become a establish brand recall? The answer is executing an year-long digital and offline marketing campaign with consistent messaging across radio, print, outdoor, and digital channels.</p><p>The strategy included over 900 content pieces and 100+ videos, including a content marketing campaign for the launch of Ankura’s LB Nagar and Vijayawada centers. The campaign led to a 6X increase in organic followers, strong brand recall, and positioned both centers as flagship locations.",
+    category: ["landing_page", "website", "all"],
+    slug: "ankura-hospitals",
+  },
 ];
 
-export const imagesList = [pro1, pro3, pro5, pro2, pro4, pro6];
+export const imagesList = [pro1, pro2, pro3, pro4, pro5, pro6, pro7];

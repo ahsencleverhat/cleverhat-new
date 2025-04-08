@@ -13,7 +13,7 @@ const AllServices = () => {
       <PageHeader heading={"Services All"} page={"Services All"} />
       <Services isHeading={false} />
       <Metting />
-      <Pricing />
+      {/* <Pricing /> */}
       <WorkeProcess />
       <ScrollRestoration />
     </>

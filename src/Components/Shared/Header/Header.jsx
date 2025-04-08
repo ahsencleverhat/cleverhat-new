@@ -30,18 +30,18 @@ const menuList = [
     section: "#services",
     name: "Services",
   },
-  // {
-  //   id: 5,
-  //   path: "/",
-  //   section: "#testimonial",
-  //   name: "Testimonial",
-  // },
-  // {
-  //   id: 6,
-  //   path: "/",
-  //   section: "#blog",
-  //   name: "Blog",
-  // },
+  {
+    id: 5,
+    path: "/",
+    section: "#testimonial",
+    name: "Testimonial",
+  },
+  {
+    id: 6,
+    path: "/all-blog",
+    section: "#blog",
+    name: "Blog",
+  },
   {
     id: 7,
     path: "/contact",
@@ -135,7 +135,7 @@ const Header = () => {
             </div>
             <div
               onClick={() => setIsSidebarActive(true)}
-              className="remove__click"
+              className="remove__click d-none d-lg-flex"
             >
               <List className="icon" />
             </div>

@@ -84,7 +84,7 @@ const Protfolio = () => {
             </ul>
             <div className="tabcontents project__wrapone">
               {filterProject.map(
-                ({ heading, id, image, subHeading }, index) => (
+                ({ heading, id, image, subHeading, slug }, index) => (
                   <ProjectCard
                     key={id}
                     image={image}
@@ -92,7 +92,7 @@ const Protfolio = () => {
                     subHeading={subHeading}
                     openLightbox={openLightbox}
                     index={index}
-                    navigate="/protfolio-details"
+                    navigate={`/protfolio-details/${slug}`}
                   />
                 )
               )}
